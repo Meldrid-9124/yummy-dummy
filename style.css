@@ -66,7 +66,15 @@ body {
 }
 .ingredient-input input {
     padding: 2.5%;
-    width: 75%;
+    width: 85%;
     margin-top: 2%;
     font-size: 1.6rem;
+}
+.ingredient-tags-container {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-top: 1%;
+    padding: 0;
+    display: flex;
+    flex-wrap: 1;
 }
