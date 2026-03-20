@@ -4,7 +4,7 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    background-image: url("https://images.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg");
+    background-image: url(./background.jpg);
     background-repeat : no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,9 +23,9 @@ body {
     margin-left: 10%;
 }
 .main-section {
-    margin-top: 1.5%;
+    margin-top: 1%;
     width: 100vw;
-    height: 70%;
+    height: 73%;
     display: flex;
     gap: 3%;
 }
@@ -44,14 +44,13 @@ body {
     width: 25%;
     height: 100%;
 }
-.pantry-heading {
+.main-headings {
     text-align: center;
     font-size: 1.9rem;
     font-weight: 700;
-    color: #4F4B4A;
+    color: #a91b1b;
 }
 .ingredient-section {
-    margin-top: 5%;
     margin-left: 10%;
     font-size: 1.8rem;
     font-weight: 600;
@@ -59,13 +58,11 @@ body {
 }
 #ingredient-label {
     border-radius: 16px;
-    border: 3px solid rgba(255,255,255,1))
+    border: 3px solid rgba(255,255,255,1);
 }
-.ingredient-input {
-    height: 20%;
-}
+
 .ingredient-input input {
-    padding: 2.5%;
+    padding: 2% 2.5% 2% 2.5%;
     width: 85%;
     margin-top: 2%;
     font-size: 1.6rem;
@@ -73,8 +70,66 @@ body {
 .ingredient-tags-container {
     font-size: 1.2rem;
     width: 80%;
-    margin-top: 1%;
-    padding: 0;
     display: flex;
     flex-wrap: 1;
+}
+#submit-ingredients-button {
+    padding: 2.5% 2% 2% 2.5%;
+    border: 4px solid #a3501c;
+    width: 30%;
+    font-weight: bold;
+    color: #a3501c;
+    font-size: 1.5rem;
+    border-radius: 48px;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    transition-duration: 0.4s; 
+
+}
+#submit-ingredients-button:hover {
+    background: rgba(200,200,200,0.6);
+    cursor:pointer;
+}
+.submit-button-container {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+.cooking-icon-container {
+    background: rgba(255,255,255,0.4);
+    border: 3px solid rgba(255,255,255,0.8);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 50%;
+    width: 13%;
+    height: 16%;
+    justify-self: center;
+    margin-top: 2%;
+    background-image: none;
+}
+#cooking-png {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+}
+.chef-slate {
+    display: flex;
+    flex-direction: column;
+}
+.dish-image-container {
+    height: 40%;
+    width: 82%;
+    border-radius: 24px;
+    margin: 0 auto;
+    border: 3px solid rgba(255,255,255,0.8);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+.dish-name {
+    font-size: 1.7rem;
+    color: #42352D;
+    margin: 3%;
+}
+.chef-slate .main-headings {
+    margin-bottom: 3%;
 }
